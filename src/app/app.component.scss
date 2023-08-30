@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+
+  *:not(strong-sidebar, router-outlet) {
+    width: 100%;
+  }
+
+  strong-sidebar {
+    display: block;
+    width: 16rem;
+  }
+}

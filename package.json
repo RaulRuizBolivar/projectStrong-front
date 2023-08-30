@@ -44,7 +44,9 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "postcss-lit": "^1.1.0",
     "prettier": "^2.8.7",
+    "stylelint-config-standard": "^34.0.0",
     "typescript": "~5.1.3"
   }
 }
