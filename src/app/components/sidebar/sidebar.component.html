@@ -1,1 +1,28 @@
-<p>sidebar works!</p>
+<div class="container">
+  <div class="icon icon-l icon-principal"></div>
+  <section>
+    <article routerLinkActive="active" [routerLink]="['/', 'feed']">
+      <div class="icon icon-s icon-feed" routerLinkActive="icon-feed-active"></div>
+      <p>Feed</p>
+    </article>
+    <article routerLinkActive="active" [routerLink]="['/', 'routine']">
+      <div class="icon icon-s icon-routine" routerLinkActive="icon-routine-active"></div>
+      <p>Rutinas</p>
+    </article>
+    <article routerLinkActive="active" [routerLink]="['/', 'exercices']">
+      <div class="icon icon-s icon-exercices" routerLinkActive="icon-exercices-active"></div>
+      <p>Ejercicios</p>
+    </article>
+    <article routerLinkActive="active" [routerLink]="['/', 'profile']">
+      <div class="icon icon-s icon-profile" routerLinkActive="icon-profile-active"></div>
+      <p>Perfil de usuario</p>
+    </article>
+    <article routerLinkActive="active" [routerLink]="['/', 'settings']">
+      <div class="icon icon-s icon-settings" routerLinkActive="icon-settings-active"></div>
+      <p>Ajustes</p>
+    </article>
+  </section>
+</div>
+<!-- TODO Cambiar este checkbox por un slider personalizado como en arbomap wyred-switch -->
+<!-- Este checkbox es el encargado de cambiar el tema por defecto -->
+<input type="checkbox" />

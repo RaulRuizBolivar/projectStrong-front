@@ -3,9 +3,18 @@
   src: url('./assets/fonts/Roboto-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'TOMMY';
+  src: url('./assets/fonts/MADE TOMMY Regular_PERSONAL USE.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto-Regular';
+}
+
+p {
+  font-family: 'TOMMY';
 }

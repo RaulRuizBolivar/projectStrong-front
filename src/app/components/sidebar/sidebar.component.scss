@@ -1,3 +1,98 @@
 :host {
+  --longitude: 1.5rem;
   background-color: #1f2022;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+section {
+  display: flex;
+  margin-top: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
+  color: rgb(157, 164, 174);
+}
+
+article {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+article:hover {
+  background-color: rgb(41, 43, 47);
+}
+
+article.active {
+  background-color: rgb(32, 59, 86);
+
+  p {
+    color: rgb(23, 128, 234);
+  }
+}
+
+.icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.icon-l {
+  width: calc(var(--longitude) * 4);
+  height: calc(var(--longitude) * 2);
+}
+
+.icon-s {
+  width: var(--longitude);
+  height: var(--longitude);
+}
+
+.icon-principal {
+  background-image: url('/assets/icons/logo.png');
+}
+
+.icon-feed {
+  background-image: url('/assets/icons/home.svg');
+}
+
+.icon-routine {
+  background-image: url('/assets/icons/routines.svg');
+}
+
+.icon-exercices {
+  background-image: url('/assets/icons/exercices.svg');
+}
+
+.icon-profile {
+  background-image: url('/assets/icons/userProfile.svg');
+}
+
+.icon-settings {
+  background-image: url('/assets/icons/settings.svg');
+}
+
+.icon-feed-active {
+  background-image: url('/assets/icons/home-active.svg');
+}
+
+.icon-routine-active {
+  background-image: url('/assets/icons/routines-active.svg');
+}
+
+.icon-exercices-active {
+  background-image: url('/assets/icons/exercices-active.svg');
+}
+
+.icon-profile-active {
+  background-image: url('/assets/icons/userProfile-active.svg');
+}
+
+.icon-settings-active {
+  background-image: url('/assets/icons/settings-active.svg');
 }

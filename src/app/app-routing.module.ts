@@ -7,12 +7,13 @@ import { UserProfileComponent } from './components/user-profile/user-profile.com
 import { ExercicesComponent } from './components/exercices/exercices.component';
 
 const routes: Routes = [
+  { path: 'feed', title: 'feed', component: FeedComponent },
+  { path: 'routine', title: 'routine', component: RoutineListComponent },
+  { path: 'settings', title: 'settings', component: SettingsComponent },
+  { path: 'profile', title: 'profile', component: UserProfileComponent },
+  { path: 'exercices', title: 'exercices', component: ExercicesComponent },
+
   { path: '**', redirectTo: '/feed' },
-  { path: 'feed', component: FeedComponent },
-  { path: 'routine', component: RoutineListComponent },
-  { path: 'settings', component: SettingsComponent },
-  { path: 'profile', component: UserProfileComponent },
-  { path: 'exercices', component: ExercicesComponent },
 ];
 
 @NgModule({
