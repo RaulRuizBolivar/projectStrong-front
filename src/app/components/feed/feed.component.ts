@@ -9,6 +9,8 @@ import { WorkOut } from 'src/app/interfaces/work-out';
 export class FeedComponent {
   workOuts: WorkOut[] = [
     {
+      title: 'titulo',
+      description: '',
       exercices: [],
       duration: 12,
       records: 2,
@@ -20,6 +22,7 @@ export class FeedComponent {
         username: 'usuarIo',
         profilePicture: 'url',
       },
+      likedBy: [],
     },
   ];
 }

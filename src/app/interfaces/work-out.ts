@@ -1,12 +1,16 @@
+import { Comment } from './comment';
 import { Exercice } from './exercice';
 import { User } from './user';
 
 export interface WorkOut {
+  title: string;
+  description: string;
   exercices: Exercice[];
+  pictures?: string;
   duration: number;
-  records: number;
   volume: number;
   creator: User;
   date: Date;
-  comments: any[];
+  comments: Comment[];
+  likedBy: User[];
 }
