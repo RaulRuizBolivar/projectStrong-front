@@ -1,3 +1,4 @@
+import { UserSettings } from './user-settings';
 import { WorkOut } from './work-out';
 
 export interface User {
@@ -9,4 +10,6 @@ export interface User {
   workOuts: WorkOut[];
   following?: User[];
   followers: User[];
+  userSettings: UserSettings;
+  password: string;
 }
