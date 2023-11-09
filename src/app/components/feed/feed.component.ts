@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { User } from '@interface/user';
+import { userDto } from '@interface/userDto';
+import { UserService } from '@services/user.service';
+import { Theme } from 'app/enums/theme';
 import { lastValueFrom } from 'rxjs';
-import { User } from 'src/app/interfaces/user';
-import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'strong-feed',
@@ -14,7 +16,20 @@ export class FeedComponent {
   constructor(private userService: UserService) {}
 
   async ngOnInit() {
-    this.user = await lastValueFrom(this.userService.getUser('64f08ec249ac0b8d97b0a872'));
+    this.user = await lastValueFrom(this.userService.getOne('6519f4bbcaf5a512e0309a5b'));
+    // TODO delete
+    console.log('user --->', this.user);
     this.users.push(this.user);
+  }
+
+  async createUser() {
+    const userDto: userDto = {
+      name: 'admin2',
+      username: 'superAdmin2',
+      password: 'admin-admin',
+    };
+    const response = await lastValueFrom(this.userService.create(userDto));
+    // TODO delete
+    console.log('response --->', response);
   }
 }

@@ -10,7 +10,7 @@ import { Subject, takeUntil } from 'rxjs';
 export class AppComponent implements OnInit {
   subscriptionKiller: Subject<any> = new Subject();
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
     this.route.queryParams.pipe(takeUntil(this.subscriptionKiller)).subscribe((_queryParams) => {
